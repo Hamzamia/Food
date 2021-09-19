@@ -1,3 +1,5 @@
+/* basic setup */
+
 *{
 
     margin: 0;
@@ -14,11 +16,14 @@ html{
     text-rendering: optimizeLegibility;
 }
 
+
+/* reusable code  */
 .row{
     max-width: 1140px;
     margin: 0 auto;
 }
 
+/* header */
 header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.76),rgba(0, 0, 0, 0.74)) ,url(images/hero.jpg);
     background-size: cover;
@@ -32,9 +37,93 @@ header{
     left: 50%;
     transform: translate(-50%,-50%);
 }
+/* headings */
 h1{
     margin: 0;
     color: #fff;
     font-size: 200%;
+    font-weight: 100;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+ /* .btn:link,
+ .btn:visited{
+    display: inline-block;
+    padding: 10px 30px;
     font-weight: 300;
+    text-decoration: none;
+    color: #fff;
+}
+.btn:hover,
+.btn:active
+{
+background-color: blue;
+} */
+
+/* .btn-full{
+    background-color: rgb(0, 255, 179);
+} */
+/* .btn-btn-full:link,
+.btn-btn-full:visited
+{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    background-color: orange;
+    border-radius: 200px;
+}
+.btn-btn-ghost:link,
+.btn-btn-ghost:visited{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color:papayawhip(02, 202, 202, 0.39);
+    color: papayawhip;
+    border: 2px solid red;
+    border-radius: 200px;
+}
+.btn:hover,
+.btn:active
+{
+background-color: blue;
+} */
+.btn-btn-full
+{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    background-color: orange;
+    border-radius: 200px;
+}
+
+.btn-btn-ghost{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color:papayawhip(02, 202, 202, 0.39);
+    color: papayawhip;
+    border: 2px solid red;
+    border-radius: 200px;
+}
+/* logo */
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+}
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nav li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
 }
